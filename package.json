@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "node build/index.js",
-    "dev": "ts-node-dev --ignore-watch node_modules index.ts"
+    "dev": "ts-node-dev --ignore-watch node_modules index.ts",
+    "build": "tsc ./index.ts --outDir build"
   },
   "keywords": [],
   "author": "",

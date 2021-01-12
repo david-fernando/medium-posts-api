@@ -25,6 +25,8 @@
   "dependencies": {
     "axios": "^0.21.1",
     "express": "^4.17.1",
+    "striptags": "^3.1.1",
+    "truncate": "^2.1.0",
     "xml-js": "^1.6.11"
   }
 }

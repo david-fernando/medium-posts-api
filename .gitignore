@@ -2,6 +2,3 @@
 /node_modules
 /.pnp
 .pnp.js
-
-# Heroku Procfile
-/Procfile

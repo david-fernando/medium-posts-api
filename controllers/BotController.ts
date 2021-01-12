@@ -30,6 +30,8 @@ function BotController(){
             })
         })
 
+        response.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Origin");
+
         return response.json({ dataMedium })
     }
     return {

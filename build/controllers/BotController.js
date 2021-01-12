@@ -64,6 +64,7 @@ function BotController() {
                                 description: textCuted[index].replace(/\n/g, '. ').replace('. ', '')
                             });
                         });
+                        response.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Origin");
                         return [2 /*return*/, response.json({ dataMedium: dataMedium })];
                 }
             });

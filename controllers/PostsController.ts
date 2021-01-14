@@ -2,9 +2,13 @@ import { Request, Response } from 'express'
 import axios from 'axios'
 import editText from '../utils/editText'
 
-function BotController(){
+function PostsController(){
     async function index(request: Request, response: Response){
         const { usermedium } = request.query
+
+        const error = new Error('User not founder')
+
+        if(error) return response.json({ messege: 'User not found' })
 
         const rssMedium = `https://medium.com/feed/${usermedium}`
         const rssToJson = ` https://api.rss2json.com/v1/api.json?rss_url=${rssMedium}`
@@ -30,8 +34,6 @@ function BotController(){
             })
         })
 
-        response.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Origin");
-
         return response.json({ dataMedium })
     }
     return {
@@ -39,4 +41,4 @@ function BotController(){
     }
 }
 
-export default BotController
+export default PostsController

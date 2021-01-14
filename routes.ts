@@ -1,17 +1,10 @@
 import express from 'express'
-import cors from 'cors'
-import BotController from './controllers/BotController'
+import PostsController from './controllers/PostsController'
 
 const routes = express.Router()
 
-const corsOptions = {
-  origin: '*',
-  optionsSuccessStatus: 200
-}
+const postsController = PostsController()
 
-
-const botController = BotController()
-
-routes.get('/', cors(corsOptions), botController.index)
+routes.get('/', postsController.index)
 
 export default routes

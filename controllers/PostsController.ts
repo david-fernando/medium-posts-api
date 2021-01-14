@@ -1,35 +1,17 @@
 import { Request, Response } from 'express'
-import axios from 'axios'
 import editText from '../utils/editText'
+import returnJsonData from '../utils/returnJsonData'
+import returnJsonPosts from '../utils/returnJsonPosts'
 
 function PostsController(){
     async function index(request: Request, response: Response){
         const { usermedium } = request.query
+        const edit = editText()
 
         try{
-            const rssMedium = `https://medium.com/feed/${usermedium}`
-            const rssToJson = ` https://api.rss2json.com/v1/api.json?rss_url=${rssMedium}`
-
-            const data = await axios.get(rssToJson)
-
-            const mediumPosts = data.data
-
-            const edit = editText()
-
-            const textWithoutTags = edit.removeTags(mediumPosts.items)
-
-            const textCuted = edit.cutText(textWithoutTags)
+            const mediumPosts = (usermedium)? await returnJsonData(usermedium.toString()) : response.json({ message: 'Unspecified user' })
             
-            let dataMedium: any = []
-
-            mediumPosts.items.map((item: any, index: number) =>{
-                dataMedium.push({
-                title: mediumPosts.items[index].title,
-                link: mediumPosts.items[index].link,
-                image: mediumPosts.items[index].thumbnail,
-                description: textCuted[index].replace(/\n/g, '. ').replace('. ', '')
-                })
-            })
+            const dataMedium = returnJsonPosts(mediumPosts, mediumPosts.items)
 
             return response.json({ dataMedium })
         }catch{

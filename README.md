@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+ <img width=200px height=128px src="assets/icon.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Medium Posts API</h3>
@@ -13,87 +13,70 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Unofficial Medium API that returns the JSON of your posts
     <br> 
 </p>
 
 ## 📝 Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
+- [How to use](#how_to_use)
+- [Deployment](#how_to_contribute)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
-## 🧐 About <a name = "about"></a>
 
-Unofficial Medium API that returns the JSON of your posts
+## 🏁 <span id="how_to_use">How to use </span>
 
-## 🏁 Getting Started <a name="getting_started"></a>
+Do a GET request for the url together with your Medium user
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
+```bash
+https://mediumpostsapi.herokuapp.com/?usermedium=@yourmediumusername
 ```
 
-And repeat
+For example the request for the url below...
 
+```bash
+https://mediumpostsapi.herokuapp.com/?usermedium=@davidfernandodamata21
 ```
-until finished
-```
+...will returns the following result
 
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+```bash
+[
+  {	
+  title: "Como reduzir a quantidade de IFs"
+  link: "https://medium.com/david-fernando/como-reduzir-a-quantidade-de-ifs-4484fc728397?source=rss-e1120fb0abef------2"
+  image: "https://cdn-images-1.medium.com/max/1024/1*6wlQhci1Pot4BWUPDpHbfw.jpeg"
+  description: "Uma introdução ao design pattern Strategy com JavaScript. Se você achou esse artigo em sua…"
+  },
+  {
+  title: "Por que usar TypeScript?"
+  link: "https://medium.com/david-fernando/por-que-usar-typescript-ca15607eed33?source=rss-e1120fb0abef------2"
+  image: "https://cdn-images-1.medium.com/max/1024/1*ODf4X51nKEMElimXA706gQ.jpeg"
+  description: "Veja quais são os benefícios de utiliza-lo em seus projetos. O TypeScript realmente pode n…"
+  }
+]
 ```
 
-## 🎈 Usage <a name="usage"></a>
+### <span id="how_to_contribute">How to contribute</span>
 
-Add notes about how to use the system.
+ Fork this repository, make clone for your machine, and coding!
 
-## 🚀 Deployment <a name = "deployment"></a>
+ To run the development server use one of the commands below
 
-Add additional notes about how to deploy this on a live system.
+```bash
+yarn dev
 
-## ⛏️ Built Using <a name = "built_using"></a>
+# or
 
-- [MongoDB](https://www.mongodb.com/) - Database
+npm dev
+```
+When everything is ready, do a pull request to the branch development.
+
+## ⛏️ <span id="#built_using">Built Using</span>
+
 - [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
-## ✍️ Authors <a name = "authors"></a>
+## ✍️ <span id="#authors">Author</span>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- [@david-fernando](https://github.com/david-fernando) - Idea & Initial work

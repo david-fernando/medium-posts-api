@@ -6,14 +6,13 @@ function PostsController(){
     async function index(request: Request, response: Response){
         const { usermedium } = request.query
 
-        const rssMedium = `https://medium.com/feed/${usermedium}`
-        const rssToJson = ` https://api.rss2json.com/v1/api.json?rss_url=${rssMedium}`
+        try{
+            const rssMedium = `https://medium.com/feed/${usermedium}`
+            const rssToJson = ` https://api.rss2json.com/v1/api.json?rss_url=${rssMedium}`
 
-        const data = await axios.get(rssToJson)
+            const data = await axios.get(rssToJson)
 
-        const mediumPosts = data.data
-
-        if(mediumPosts.status === 'ok'){
+            const mediumPosts = data.data
 
             const edit = editText()
 
@@ -33,7 +32,7 @@ function PostsController(){
             })
 
             return response.json({ dataMedium })
-        }else{
+        }catch{
             return response.json({ message: 'User not found' })
         }
     }

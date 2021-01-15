@@ -27,18 +27,18 @@
 
 ## 🏁 <span id="how_to_use">How to use </span>
 
-Do a GET request for the url together with your Medium user
+Make a get request to the url below with your Medium user
 
 ```bash
-https://mediumpostsapi.herokuapp.com/?usermedium=@yourmediumusername
+GET https://mediumpostsapi.herokuapp.com/?usermedium=@{yourmediumusername}
 ```
 
-For example the request for the url below...
+Example
 
 ```bash
 https://mediumpostsapi.herokuapp.com/?usermedium=@davidfernandodamata21
 ```
-...will returns the following result
+The request for the above url will bring the following results
 
 ```bash
 [
@@ -59,9 +59,19 @@ https://mediumpostsapi.herokuapp.com/?usermedium=@davidfernandodamata21
 
 ### <span id="how_to_contribute">How to contribute</span>
 
- Fork this repository, make clone for your machine, and coding!
+ Fork this repository, make clone for your machine.
 
- To run the development server use one of the commands below
+ Install the dependencies with one of the commands below`
+
+ ```bash
+ yarn install
+ 
+ # or
+
+ npm install
+ ```
+
+Then, run the development server.
 
 ```bash
 yarn dev
@@ -70,6 +80,7 @@ yarn dev
 
 npm dev
 ```
+Then, let's code.
 When everything is ready, do a pull request to the branch development.
 
 ## ⛏️ <span id="#built_using">Built Using</span>

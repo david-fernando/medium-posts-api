@@ -61,7 +61,7 @@ The request for the above url will bring the following results
 
  Fork this repository, make clone for your machine.
 
- Install the dependencies with one of the commands below`
+ Install the dependencies with one of the commands below:
 
  ```bash
  yarn install

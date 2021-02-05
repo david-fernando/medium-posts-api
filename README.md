@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=128px src="assets/icon.png" alt="Project logo"></a>
+ <img width=200px height=128px src="https://images2.imgbox.com/a8/bb/ISkyh3WP_o.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Medium Posts API</h3>
@@ -30,13 +30,13 @@
 Make a get request to the url below with your Medium user
 
 ```bash
-GET https://mediumpostsapi.herokuapp.com/?usermedium=@{yourmediumusername}
+GET https://mediumpostsapi.herokuapp.com/?usermedium={{yourmediumusername}}
 ```
 
 Example
 
 ```bash
-https://mediumpostsapi.herokuapp.com/?usermedium=@davidfernandodamata21
+https://mediumpostsapi.herokuapp.com/?usermedium=davidfernandodamata21
 ```
 The request for the above url will bring the following results
 
@@ -80,14 +80,14 @@ yarn dev
 
 npm dev
 ```
-Then, let's code.
+Then, let's get code.
 When everything is ready, do a pull request to the branch development.
 
-## ⛏️ <span id="#built_using">Built Using</span>
+## ⛏️ <span id="built_using">Built Using</span>
 
 - [Express](https://expressjs.com/) - Server Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
-## ✍️ <span id="#authors">Author</span>
+## ✍️ <span id="authors">Author</span>
 
 - [@david-fernando](https://github.com/david-fernando) - Idea & Initial work

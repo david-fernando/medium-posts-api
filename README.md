@@ -30,7 +30,7 @@
 Make a get request to the url below with your Medium user
 
 ```bash
-GET https://mediumpostsapi.herokuapp.com/?usermedium=@{yourmediumusername}
+GET https://mediumpostsapi.herokuapp.com/?usermedium={{yourmediumusername}}
 ```
 
 Example

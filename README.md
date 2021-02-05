@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=128px src="https://images2.imgbox.com/a8/bb/ISkyh3WP_o.png" alt="Project logo"></a>
+ <img width=200px height=128px src="https://images2.imgbox.com/a8/bb/ISkyh3WP_o.png" alt="Medium Posts API"></a>
 </p>
 
 <h3 align="center">Medium Posts API</h3>

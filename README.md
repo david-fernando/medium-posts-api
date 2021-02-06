@@ -80,7 +80,7 @@ yarn dev
 
 npm dev
 ```
-Then, let's get code.
+Then, let's get coding.
 When everything is ready, do a pull request to the branch development.
 
 ## ⛏️ <span id="built_using">Built Using</span>

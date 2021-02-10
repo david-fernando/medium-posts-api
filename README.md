@@ -20,7 +20,7 @@
 ## 📝 Table of Contents
 
 - [How to use](#how_to_use)
-- [Deployment](#how_to_contribute)
+- [How to contribute](#how_to_contribute)
 - [Built Using](#built_using)
 - [Authors](#authors)
 

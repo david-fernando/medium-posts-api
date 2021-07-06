@@ -1,6 +1,3 @@
-import striptags from 'striptags'
-import truncate from 'truncate'
-
 function editText(){
   function cutText(text: Array<any>){
     let textCuted: any = []

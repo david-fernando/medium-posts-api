@@ -2,27 +2,17 @@ import striptags from 'striptags'
 import truncate from 'truncate'
 
 function editText(){
-  function removeTags(data: Array<any>){
-    let textWithoutTags: any = []
-
-    data.map((item: any, index: number) =>{
-      textWithoutTags.push(striptags(data[index].description))
-    })
-
-    return textWithoutTags
-  }
-  function cutText(text: Array<string>){
+  function cutText(text: Array<any>){
     let textCuted: any = []
 
     text.map((item: any, index: number) =>{
-      textCuted.push(truncate(text[index], 90))
+      textCuted.push(text[index].description.match(/<p>(.*?)<\/p>/g)[0].replace(/<\/?[A-Za-z]>/g,''))
     })
 
     return textCuted
   }
 
   return {
-    removeTags,
     cutText
   }
 }

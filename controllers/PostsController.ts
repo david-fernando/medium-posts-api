@@ -6,7 +6,6 @@ import returnJsonPosts from '../utils/returnJsonPosts'
 function PostsController(){
     async function index(request: Request, response: Response){
         const { usermedium } = request.query
-        const edit = editText()
 
         try{
             const mediumPosts = (usermedium)? await returnJsonData(usermedium.toString()) : response.json({ message: 'Unspecified user' })

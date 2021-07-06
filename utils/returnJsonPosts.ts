@@ -5,9 +5,7 @@ function returnJsonPosts(mediumPosts: any, mediumItems: Array<any>){
 
   const edit = editText()
 
-  const textWithoutTags = edit.removeTags(mediumItems)
-
-  const textCuted = edit.cutText(textWithoutTags)
+  const textCuted = edit.cutText(mediumItems)
 
   mediumPosts.items.map((item: any, index: number) =>{
     dataMedium.push({

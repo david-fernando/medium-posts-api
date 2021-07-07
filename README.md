@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=128px src="https://images2.imgbox.com/a8/bb/ISkyh3WP_o.png" alt="Project logo"></a>
+ <img width=200px height=128px src="https://images2.imgbox.com/a8/bb/ISkyh3WP_o.png" alt="Medium Posts API"></a>
 </p>
 
 <h3 align="center">Medium Posts API</h3>
@@ -20,7 +20,7 @@
 ## 📝 Table of Contents
 
 - [How to use](#how_to_use)
-- [Deployment](#how_to_contribute)
+- [How to contribute](#how_to_contribute)
 - [Built Using](#built_using)
 - [Authors](#authors)
 
@@ -86,7 +86,7 @@ yarn dev
 
 npm dev
 ```
-Then, let's get code.
+Then, let's get coding.
 When everything is ready, do a pull request to the branch development.
 
 ## ⛏️ <span id="built_using">Built Using</span>

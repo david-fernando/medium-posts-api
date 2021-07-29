@@ -1,93 +1,34 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=128px src="assets/icon.png" alt="Project logo"></a>
-</p>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-<h3 align="center">Medium Posts API</h3>
+## Getting Started
 
-<div align="center">
-
-[![Status](https://img.shields.io/badge/status-active-success.svg)]() [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-</div>
-
----
-
-<p align="center"> Unofficial Medium API that returns the JSON of your posts
-    <br> 
-</p>
-
-## 📝 Table of Contents
-
-- [How to use](#how_to_use)
-- [Deployment](#how_to_contribute)
-- [Built Using](#built_using)
-- [Authors](#authors)
-
-
-## 🏁 <span id="how_to_use">How to use </span>
-
-Make a get request to the url below with your Medium user
+First, run the development server:
 
 ```bash
-GET https://mediumpostsapi.herokuapp.com/?usermedium=@{yourmediumusername}
-```
-
-Example
-
-```bash
-https://mediumpostsapi.herokuapp.com/?usermedium=@davidfernandodamata21
-```
-The request for the above url will bring the following results
-
-```bash
-[
-  {	
-  title: "Como reduzir a quantidade de IFs"
-  link: "https://medium.com/david-fernando/como-reduzir-a-quantidade-de-ifs-4484fc728397?source=rss-e1120fb0abef------2"
-  image: "https://cdn-images-1.medium.com/max/1024/1*6wlQhci1Pot4BWUPDpHbfw.jpeg"
-  description: "Uma introdução ao design pattern Strategy com JavaScript. Se você achou esse artigo em sua…"
-  },
-  {
-  title: "Por que usar TypeScript?"
-  link: "https://medium.com/david-fernando/por-que-usar-typescript-ca15607eed33?source=rss-e1120fb0abef------2"
-  image: "https://cdn-images-1.medium.com/max/1024/1*ODf4X51nKEMElimXA706gQ.jpeg"
-  description: "Veja quais são os benefícios de utiliza-lo em seus projetos. O TypeScript realmente pode n…"
-  }
-]
-```
-
-### <span id="how_to_contribute">How to contribute</span>
-
- Fork this repository, make clone for your machine.
-
- Install the dependencies with one of the commands below:
-
- ```bash
- yarn install
- 
- # or
-
- npm install
- ```
-
-Then, run the development server.
-
-```bash
-yarn dev
-
+npm run dev
 # or
-
-npm dev
+yarn dev
 ```
-Then, let's code.
-When everything is ready, do a pull request to the branch development.
 
-## ⛏️ <span id="#built_using">Built Using</span>
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [Express](https://expressjs.com/) - Server Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-## ✍️ <span id="#authors">Author</span>
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
 
-- [@david-fernando](https://github.com/david-fernando) - Idea & Initial work
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

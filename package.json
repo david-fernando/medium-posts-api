@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/promise.any": "^2.0.0",
+    "axios": "^0.21.1",
     "next": "11.0.1",
+    "promise.any": "^2.0.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "striptags": "^3.2.0",
+    "truncate": "^2.1.0"
   },
   "devDependencies": {
     "@types/react": "17.0.15",

@@ -12,7 +12,8 @@ function returnJsonPosts(mediumPosts: any, mediumItems: Array<any>){
     title: mediumPosts.items[index].title,
     link: mediumPosts.items[index].link,
     image: mediumPosts.items[index].thumbnail,
-    description: textCuted[index].replace(/\n/g, '. ').replace('. ', '')
+    description: textCuted[index].replace(/\n/g, '. ').replace('. ', ''),
+    date: mediumPosts.items[index].publishedAt
     })
   })
 

@@ -3,10 +3,6 @@ import { sanitize } from 'string-sanitizer'
 import returnJsonData from '../utils/returnJsonData'
 import returnJsonPosts from '../utils/returnJsonPosts'
 
-interface User {
-    usermedium: string
-}
-
 function PostsController(){
     async function index(request: Request, response: Response){
         const { usermedium } = request.query

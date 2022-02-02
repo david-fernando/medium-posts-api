@@ -417,7 +417,7 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-express-validator@*, express-validator@^6.14.0:
+express-validator@*:
   version "6.14.0"
   resolved "https://registry.yarnpkg.com/express-validator/-/express-validator-6.14.0.tgz#8ee7a32bf1ffcf2573db5f17c9cad279698e5d41"
   integrity sha512-ZWHJfnRgePp3FKRSKMtnZVnD1s8ZchWD+jSl7UMseGIqhweCo1Z9916/xXBbJAa6PrA3pUZfkOvIsHZG4ZtIMw==
@@ -1020,6 +1020,11 @@ source-map@^0.6.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
+
+string-sanitizer@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/string-sanitizer/-/string-sanitizer-2.0.2.tgz#4f5fc22cc2c6466e7696beb497c79840f7b5a551"
+  integrity sha512-zECtWmUawolaVbUOdDRdhAM4jN7wl1sB4indjTmHpUFavzFSeYEDSVF85dZPPyDKoMRTJbrz+Tp0SjPPCWxscA==
 
 string.prototype.trimend@^1.0.4:
   version "1.0.4"

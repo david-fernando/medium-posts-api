@@ -2,8 +2,12 @@ function editText(){
   function cutText(text: Array<any>){
     let textCuted: any = []
 
+    const tagsRegex = /<p>(.*?)<\/p>/g
+
+    const textRegex = /<\/?[A-Za-z]>/g
+
     text.map((item: any, index: number) =>{
-      textCuted.push(text[index].description.match(/<p>(.*?)<\/p>/g)[0].replace(/<\/?[A-Za-z]>/g,''))
+      textCuted.push(text[index].description.match(tagsRegex)[0].replace(textRegex,''))
     })
 
     return textCuted

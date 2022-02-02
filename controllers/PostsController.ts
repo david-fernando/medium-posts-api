@@ -1,14 +1,20 @@
 import { Request, Response } from 'express'
-import editText from '../utils/editText'
+import { sanitize } from 'string-sanitizer'
 import returnJsonData from '../utils/returnJsonData'
 import returnJsonPosts from '../utils/returnJsonPosts'
+
+interface User {
+    usermedium: string
+}
 
 function PostsController(){
     async function index(request: Request, response: Response){
         const { usermedium } = request.query
 
+        const userSanitized = sanitize(`${usermedium}`)
+
         try{
-            const mediumPosts = (usermedium)? await returnJsonData(usermedium.toString()) : response.json({ message: 'Unspecified user' })
+            const mediumPosts = (userSanitized)? await returnJsonData(userSanitized.toString()) : response.json({ message: 'Unspecified user' })
             
             const dataMedium = returnJsonPosts(mediumPosts, mediumPosts.items)
 

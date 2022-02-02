@@ -25,7 +25,6 @@
     "ts-node-dev": "^1.1.1"
   },
   "dependencies": {
-    "@types/body-parser": "^1.19.2",
     "@types/cookie-parser": "^1.4.2",
     "@types/cors": "^2.8.9",
     "@types/csurf": "^1.11.2",

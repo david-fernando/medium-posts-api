@@ -10,10 +10,10 @@ function returnJsonPosts(mediumPosts: any, mediumItems: Array<any>){
   mediumPosts.items.map((item: any, index: number) =>{
     dataMedium.push({
     title: mediumPosts.items[index].title,
+    date: mediumPosts.items[index].pubDate.split(' ')[0],
     link: mediumPosts.items[index].link,
     image: mediumPosts.items[index].thumbnail,
     description: textCuted[index].replace(/\n/g, '. ').replace('. ', ''),
-    date: mediumPosts.items[index].publishedAt
     })
   })
 

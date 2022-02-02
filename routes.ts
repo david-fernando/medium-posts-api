@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import PostsController from './controllers/PostsController'
 
+
 const routes = express.Router()
 
 const corsOptions = {
@@ -11,6 +12,6 @@ const corsOptions = {
 
 const postsController = PostsController()
 
-routes.get('/', cors(corsOptions), postsController.index)
+const postsRoute = (csrfProtection: any) => routes.get('/', csrfProtection, cors(corsOptions), postsController.index)
 
-export default routes
+export default postsRoute

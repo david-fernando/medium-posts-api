@@ -2,7 +2,6 @@ import express from 'express'
 import cors from 'cors'
 import PostsController from './controllers/PostsController'
 
-
 const routes = express.Router()
 
 const corsOptions = {

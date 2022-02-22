@@ -70,27 +70,22 @@ The request for the above url will bring the following results
 
  Fork this repository, make clone for your machine.
 
- Install the dependencies with one of the commands below:
+ Install the dependencies with the command below:
 
  ```bash
  yarn install
- 
- # or
-
- npm install
  ```
 
-Then, run the development server.
+To run the development server.
 
 ```bash
 yarn dev
-
-# or
-
-npm dev
 ```
-Then, let's get coding.
-When everything is ready, do a pull request to the branch development.
+To run the tests.
+
+```bash
+yarn test
+```
 
 ## ⛏️ <span id="built_using">Built Using</span>
 

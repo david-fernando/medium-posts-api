@@ -4,7 +4,7 @@
 
 tasks:
   - init: yarn install
-    command: yarn run start
+    command: yarn dev
 vscode:
   extensions:
     - dbaeumer.vscode-eslint

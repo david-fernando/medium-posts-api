@@ -6,8 +6,6 @@ function PostsController(){
     async function index(request: Request, response: Response){
         const { usermedium } = request.query
 
-        // const userSanitized = sanitize(`${usermedium}`)
-
         try{
             const mediumPosts = (usermedium)? await returnJsonData(usermedium.toString()) : response.json({ message: 'Unspecified user' })
             

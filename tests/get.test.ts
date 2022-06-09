@@ -2,13 +2,13 @@ import axios from 'axios'
 
 describe('Get data from Medium Posts API', ()=>{
     test('Should returns 200', async()=>{
-        const dataMedium = await axios.get(`http://localhost:3333/?usermedium=davidfernandodamata21`) 
+        const dataMedium = await axios.get('http://localhost:3333/?usermedium=davidfernandodamata21')
         
         expect(dataMedium.status).toBe(200)
     })
 
     test('Should returns all data from API', async()=>{
-        const dataMedium = await axios.get(`http://localhost:3333/?usermedium=davidfernandodamata21`) 
+        const dataMedium = await axios.get('http://localhost:3333/?usermedium=davidfernandodamata21')
 
         const data = dataMedium.data.dataMedium[0]
 

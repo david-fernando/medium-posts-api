@@ -3,7 +3,11 @@ import sanitizeHtml from 'sanitize-html'
 function editText(){
   function cutText(text: Array<any>){
     let textCuted: any = []
-    let sanitizedText: any
+    let sanitizeText: any
+    let sanitizedText: string
+    let tags: string
+
+    let indexChosen: number
 
     const tagsRegex = /<p>(.*?)<\/p>/g
 
@@ -17,9 +21,13 @@ function editText(){
 
     text.map((item: any, index: number) =>{
 
-      sanitizedText = sanitizeHtml(text[index].description, { transformTags })
+      sanitizeText = sanitizeHtml(text[index].description, { transformTags })
 
-      sanitizedText.match(tagsRegex)[0].replace(textRegex,'')
+      tags = sanitizeText.match(tagsRegex)[0]
+
+      indexChosen = (tags === '<p></p>')? 1 : 0
+
+      sanitizedText = sanitizeText.match(tagsRegex)[indexChosen].replace(textRegex,'')
 
       textCuted.push(sanitizedText)
     })

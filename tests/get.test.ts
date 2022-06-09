@@ -17,6 +17,7 @@ describe('Get data from Medium Posts API', ()=>{
         const existLink = data.hasOwnProperty('link')
         const existImage = data.hasOwnProperty('image')
         const existDescription = data.hasOwnProperty('description')
+        const existTags = data.hasOwnProperty('tags')
 
         function existAllData(){
             if(!existTitle){
@@ -36,6 +37,10 @@ describe('Get data from Medium Posts API', ()=>{
             }
 
             if(!existDescription){
+                return;
+            }
+
+            if(!existTags){
                 return;
             }
 

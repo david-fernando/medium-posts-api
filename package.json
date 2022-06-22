@@ -16,8 +16,8 @@
   },
   "scripts": {
     "start": "node ./dist/index.js",
-    "dev": "nodemon index.ts",
-    "test": "jest --env=jsdom --watch",
+    "dev": "nodemon ./src/index.ts",
+    "test": "jest",
     "build": "tsc"
   },
   "keywords": [],

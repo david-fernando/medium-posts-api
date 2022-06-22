@@ -12,6 +12,8 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "exclude": [
-    "babel.config.js"
+    "babel.config.js",
+    "jest.config.js",
+    "coverage"
   ]
 }

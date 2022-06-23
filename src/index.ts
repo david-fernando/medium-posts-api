@@ -16,6 +16,8 @@ app.use(express.json())
 
 app.use(postsRoute(csrfProtection))
 
-app.listen(process.env.PORT || 3333, ()=>{
+const server = app.listen(process.env.PORT || 3333, ()=>{
   console.log('Servidor iniciado')
 })
+
+export default server

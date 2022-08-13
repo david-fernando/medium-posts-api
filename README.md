@@ -85,6 +85,11 @@ The request for the above url will bring the following results
   }
 ]
 ```
+ℹ **Note**
+> If your article doesn't have any images, the image property will have bellow placeholder
+```bash
+https://placehold.jp/bdbdc2/ffffff/250x250.png?text=No%20image
+```
 
 ## <span id="how_to_contribute">How to contribute</span>
 

@@ -8,4 +8,7 @@ tasks:
 vscode:
   extensions:
     - dbaeumer.vscode-eslint
+ports:
+  - port: 3333
+    visibility: private
 

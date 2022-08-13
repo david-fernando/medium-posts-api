@@ -21,8 +21,8 @@
 
 - [How to use](#how_to_use)
 - [How to contribute](#how_to_contribute)
-- [Built Using](#built_using)
-- [Authors](#authors)
+- [Built Using](#did_you_like_it)
+- [Did you like it?](#authors)
 
 
 ## 🏁 <span id="how_to_use">How to use </span>
@@ -86,7 +86,7 @@ The request for the above url will bring the following results
 ]
 ```
 
-### <span id="how_to_contribute">How to contribute</span>
+## <span id="how_to_contribute">How to contribute</span>
 
  Fork this repository, make clone for your machine.
 
@@ -107,10 +107,8 @@ To run the tests.
 yarn test
 ```
 
-## ⛏️ <span id="built_using">Built Using</span>
-
-- [Express](https://expressjs.com/) - Server Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+## <span id="did_you_like_it">Did you like it?</span>
+If so, please consider financially supporting this API, using the GitHub sponsor.<br> If it is currently not possible to make a donation, no problem, you can also help me contributing with code, or just giving me a star. Every help is welcome.<br> Thank you very much in advance.
 
 ## ✍️ <span id="authors">Author</span>
 

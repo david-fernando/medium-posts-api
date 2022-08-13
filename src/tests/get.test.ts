@@ -29,6 +29,18 @@ describe("Get data from Medium Posts API", () => {
     );
   });
 
+  test("Should return placeholder instead image", async() => {
+    const dataMedium = await (
+      await request.get("/?usermedium=getmehiredbootcamp")
+    ).body;
+
+    const imageUrl = dataMedium.dataMedium[1].image;
+
+    const placeholderUrl = 'https://placehold.jp/bdbdc2/ffffff/250x250.png?text=No%20image'
+
+    expect(imageUrl).toBe(placeholderUrl)
+  })
+
   afterAll(() => {
     app.close();
   });

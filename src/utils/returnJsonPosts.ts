@@ -1,4 +1,5 @@
 import editText from './editText'
+import returnThumbnail from './returnThumbnail'
 
 function returnJsonPosts(mediumPosts: any, mediumItems: Array<any>){
   let dataMedium: any = []
@@ -12,7 +13,7 @@ function returnJsonPosts(mediumPosts: any, mediumItems: Array<any>){
     title: mediumPosts.items[index].title,
     date: mediumPosts.items[index].pubDate.split(' ')[0],
     link: mediumPosts.items[index].link,
-    image: mediumPosts.items[index].thumbnail,
+    image: returnThumbnail(mediumPosts.items[index].thumbnail),
     description: textCuted[index].replace(/\n/g, '. ').replace('. ', ''),
     tags: mediumPosts.items[index].categories
     })

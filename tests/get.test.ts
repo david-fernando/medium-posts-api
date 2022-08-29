@@ -1,22 +1,36 @@
-import supertest from "supertest";
+import { createMocks } from 'node-mocks-http'
 
-import app from '../pages/api/[usermedium]'
+import handler from '../pages/api/[usermedium]'
 
 describe("Get data from Medium Posts API", () => {
-    
-    const request = supertest(app);
 
     test("Should returns 200", async () => {
 
-        const dataMedium = await request.get('/api/?usermedium=davidfernandodamata21');
+        const { req, res } = createMocks({
+          method: 'GET',
+          query: {
+            usermedium: 'davidfernandodamata21',
+          },
+        });
 
-        expect(dataMedium.status).toBe(200);
+        await handler(req, res)
+
+        const dataMediumStatus = res._getStatusCode()
+
+        expect(dataMediumStatus).toBe(200);
     });
 
   test("should return one post from API", async () => {
-    const dataMedium = await (
-        await request.get('/api/davidfernandodamata21')
-    ).body
+    const { req, res } = createMocks({
+      method: 'GET',
+      query: {
+        usermedium: 'davidfernandodamata21',
+      },
+    });
+
+    await handler(req, res)
+
+    const dataMedium = JSON.parse(res._getData())
 
     const data = dataMedium.dataMedium[0];
 
@@ -33,9 +47,16 @@ describe("Get data from Medium Posts API", () => {
   });
 
   test("Should return placeholder instead image", async() => {
-    const dataMedium = await (
-        await request.get('/api/getmehiredbootcamp')
-    ).body
+    const { req, res } = createMocks({
+      method: 'GET',
+      query: {
+        usermedium: 'getmehiredbootcamp',
+      },
+    });
+
+    await handler(req, res)
+
+    const dataMedium = JSON.parse(res._getData())
 
     const imageUrl = dataMedium.dataMedium[1].image;
 

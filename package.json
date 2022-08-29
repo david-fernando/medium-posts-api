@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/jest": "^28.1.8",
     "@types/sanitize-html": "^2.6.2",
     "axios": "^0.27.2",
     "next": "12.2.5",

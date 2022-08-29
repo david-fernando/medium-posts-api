@@ -1,8 +1,12 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import returnJsonData from '../../utils/returnJsonData'
 
-function handler( request: NextApiRequest, response: NextApiResponse) {
+async function handler( request: NextApiRequest, response: NextApiResponse) {
     const { usermedium } = request.query
-    response.json({usermedium})
+
+    const mediumPosts = (usermedium) && await returnJsonData(usermedium.toString())
+
+    response.json({mediumPosts})
 }
 
 export default handler

@@ -30,13 +30,13 @@
 Make a get request to the url below with your Medium user
 
 ```bash
-GET https://mediumpostapi.vercel.app/{{yourmediumusername}}
+GET https://mediumpostsapi.vercel.app/api/{{yourmediumusername}}
 ```
 
 Example
 
 ```bash
-https://mediumpostapi.vercel.app/davidfernandodamata21
+https://mediumpostsapi.vercel.app/api/davidfernandodamata21
 ```
 The request for the above url will bring the following results
 

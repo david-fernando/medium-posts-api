@@ -4,11 +4,10 @@
 
 tasks:
   - init: yarn install
-    command: yarn dev
 vscode:
   extensions:
     - dbaeumer.vscode-eslint
 ports:
-  - port: 3333
+  - port: 3000
     visibility: private
 

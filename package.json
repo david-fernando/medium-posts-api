@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest ./src/tests --detectOpenHandles"
   },
   "dependencies": {
     "@types/jest": "^28.1.8",

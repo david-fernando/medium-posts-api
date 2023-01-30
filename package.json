@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@types/sanitize-html": "^2.8.0",
-    "axios": "^1.2.3",
+    "axios": "^1.2.6",
     "next": "13.1.5",
     "nextjs-cors": "^2.1.2",
     "react": "18.2.0",

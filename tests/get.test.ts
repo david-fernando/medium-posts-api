@@ -58,7 +58,7 @@ describe("Get data from Medium Posts API", () => {
 
     const dataMedium = JSON.parse(res._getData())
 
-    const imageUrl = dataMedium.dataMedium[1].image;
+    const imageUrl = dataMedium.dataMedium[2].image;
 
     const placeholderUrl = 'https://placehold.jp/bdbdc2/ffffff/250x250.png?text=No%20image'
 

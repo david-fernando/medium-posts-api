@@ -18,7 +18,6 @@
 }
 
 .header > span > p {
-    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 2.4rem;
     display: flex;
@@ -33,7 +32,6 @@
 }
 
 .header > nav > a {
-    font-family: Inter;
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 19.36rem;

@@ -2,7 +2,11 @@ import Image from 'next/image'
 
 import styles from '@/styles/components/Header.module.css'
 
-function Header(){
+type Props = {
+    linkActive?: string
+}
+
+function Header({linkActive = 'home'}: Props){
     return (
         <header className={styles.header}>
         <span>
@@ -10,13 +14,21 @@ function Header(){
             <p>Medium Posts API</p>
         </span>
         <nav>
-            <a href="./" className={styles.active}>Home</a>
-            <a href="#" className={styles.inactive}>Documentation</a>
+            <a href="./"
+             className={(linkActive === 'home')? styles.active : styles.inactive}>
+                Home
+            </a>
+            <a href="#"
+             className={(linkActive === 'documentation')? styles.active : styles.inactive}>
+                Documentation
+            </a>
             <a
              href="https://github.com/david-fernando/medium-posts-api"
              rel="noreferrer" 
              target="_blank"
-             className={styles.inactive}>Github</a>
+             className={(linkActive === 'github')? styles.active : styles.inactive}>
+                Github
+            </a>
         </nav>
     </header>
     )

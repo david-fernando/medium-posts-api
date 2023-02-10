@@ -1,0 +1,47 @@
+.header {
+    background: #FFF;
+    gap: 8px;
+    height: 6.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #F46700;
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+}
+
+.header > span {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    width: 80%;
+    flex-wrap: nowrap;
+}
+
+.header > span > p {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    line-height: 29.05px;
+}
+
+.header > nav {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.header > nav > a {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 19.36rem;
+}
+
+.active {
+    color: #F46700;
+}
+
+.inactive {
+    color: #333333
+}

@@ -1,5 +1,86 @@
 .banner {
-    width: 1440px;
-    height: 449px;
+    width: 100%;
+    height: 44.9rem;
     background: #F3F1F2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner > section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0rem 6.4rem;
+    gap: 2.4rem;
+    position: absolute;
+    width: 144.0rem;
+    height: 28.0rem;
+    left: 0rem;
+    top: 17.3rem;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    z-index: 3;
+}
+
+.banner > img {
+    height: 100%;
+}
+
+.banner > section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 55%;
+    padding: 0rem;
+    gap: 2.4rem;
+    width: 75.3rem;
+    height: 19.2rem;
+}
+
+.banner > section > div > span {
+    display: flex;
+    gap: 0.8rem
+}
+
+.banner > section > div > p:first-child {
+    font-weight: 600;
+    font-size: 4.0rem;
+}
+
+.banner > section > div > p:first-child > span {
+    color: #F46700
+}
+
+.banner > section > div > .description {
+    font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: #707070
+}
+
+.banner > section > div > span > input {
+    width: 42.6rem;
+    height: 4.0rem;
+    background: #FAFAFA;
+    color: #707070;
+    border-radius: 2.4rem;
+    padding: 0rem 1.6rem;
+    border-style: none;
+}
+
+.banner > section > div > span > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2.4rem;
+    width: 10.2rem;
+    height: 4.0rem;
+    background: #F46700;
+    box-shadow: 0px 2rem 18rem rgba(244, 103, 0, 0.3);
+    border-radius: 1.6rem;
+    border-style: none;
+    color: #FFF
 }

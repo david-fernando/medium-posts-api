@@ -1,6 +1,10 @@
+import Header from '@/components/Header'
+
 function Home(){
     return (
-        <h1>Medium Posts API</h1>
+        <div className="container">
+            <Header />
+        </div>
     )
 }
 

@@ -7,14 +7,10 @@ type Props = {
 }
 
 function Header({linkActive = 'home'}: Props){
-    return (
-        <header className={styles.header}>
-        <span>
-            <Image width={64} height={39.8} src="/icon.svg" alt="Medium Posts API" />
-            <p>Medium Posts API</p>
-        </span>
-        <nav>
-            <a href="./"
+
+    const Links = () => (
+        <>
+        <a href="./"
              className={(linkActive === 'home')? styles.active : styles.inactive}>
                 Home
             </a>
@@ -29,7 +25,21 @@ function Header({linkActive = 'home'}: Props){
              className={(linkActive === 'github')? styles.active : styles.inactive}>
                 Github
             </a>
+        </>
+    )
+
+    return (
+        <header className={styles.header}>
+        <span>
+            <Image width={64} height={39.8} src="/icon.svg" alt="Medium Posts API" />
+            <p>Medium Posts API</p>
+        </span>
+        <nav>
+            <Links />
         </nav>
+        <button className={styles.menuButton}>
+            <Image src='menu-icon.svg' width={16} height={17} alt="Menu Button" />
+        </button>
     </header>
     )
 }

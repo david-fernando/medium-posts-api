@@ -17,6 +17,15 @@
     text-decoration: none;
   }
 
+  button {
+    border: none;
+    background: none;
+  }
+
+  button:focus-visible, img:focus-visible {
+    outline: none;
+  }
+
   .container {
     width: 100%;
     height: max-content;

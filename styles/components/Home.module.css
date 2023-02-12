@@ -15,6 +15,8 @@
     position: absolute;
     width: 144.0rem;
     height: 28.0rem;
+    min-width: 100rem;
+    max-width: 100%;
     left: 0rem;
     top: 17.3rem;
     flex: none;
@@ -83,4 +85,15 @@
     border-radius: 1.6rem;
     border-style: none;
     color: #FFF
+}
+
+@media (max-width: 867px) {
+    .banner > section {
+        padding: 0rem 2.4rem;
+        /* width: 135rem */
+    }
+    .banner > section > div > p:first-child {
+        font-weight: 600;
+        font-size: 3.2rem;
+    }
 }

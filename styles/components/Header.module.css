@@ -60,10 +60,40 @@
 }
 
 @media (max-width: 757px) {
+    .header {
+        padding: 2.4rem;
+        height: 8.87rem;
+    }
     .header > nav {
         display: none;
     }
     .menuButton {
         display: block;
+    }
+}
+
+@media (max-width: 633px) {
+    .header {
+        padding: 2.4rem;
+        min-height: 9.87rem;
+    }
+}
+
+@media (max-width: 589px) {
+    .header {
+        padding: 3.4rem;
+        min-height: 11.87rem;
+    }
+    .header > span > img {
+        width: 10.4rem;
+        min-height: 8.2rem;
+    }
+    .header > span > p {
+        font-size: 3.5rem;
+    }
+
+    .menuButton > img {
+        width: 2.5rem;
+        height: 4rem;
     }
 }

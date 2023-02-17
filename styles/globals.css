@@ -38,3 +38,21 @@
       color-scheme: dark;
     }
   }
+
+  @media (max-width: 757px) {
+    html, body {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 401px) {
+    html, body {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 379px) {
+    html, body {
+      font-size: 10px;
+    }
+  }

@@ -70,6 +70,15 @@
     .menuButton {
         display: block;
     }
+    
+    .menuButton > img {
+        width: 2rem;
+        height: 4rem;
+    }
+    .header > span > img {
+        width: 6.4rem;
+        min-height: 8.2rem;
+    }
 }
 
 @media (max-width: 633px) {
@@ -77,12 +86,17 @@
         padding: 2.4rem;
         min-height: 9.87rem;
     }
+
+    .header > span > img {
+        width: 8.4rem;
+        min-height: 8.2rem;
+    }
 }
 
 @media (max-width: 589px) {
     .header {
         padding: 3.4rem;
-        min-height: 11.87rem;
+        min-height: 12.87rem;
     }
     .header > span > img {
         width: 10.4rem;
@@ -95,5 +109,12 @@
     .menuButton > img {
         width: 2.5rem;
         height: 4rem;
+    }
+}
+
+@media (max-width: 589px) {
+    .header {
+        padding: 3.4rem;
+        min-height: 14.87rem;
     }
 }

@@ -118,3 +118,24 @@
         min-height: 14.87rem;
     }
 }
+
+@media (max-width: 401px) {
+    .header {
+        padding: 3.4rem;
+        min-height: 19.87rem;
+    }
+
+    .header > span > img {
+        width: 14.4rem;
+        min-height: 10.2rem;
+    }
+
+    .header > span > p {
+        font-size: 4.9rem;
+    }
+
+    .menuButton > img {
+        width: 4.5rem;
+        height: 4rem;
+    }
+}

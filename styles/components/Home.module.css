@@ -166,3 +166,20 @@
         font-size: 2.4rem;
     }
 }
+
+@media (max-width: 401px) {
+    .banner > section > div > .description {
+        font-size: 4.6rem;
+        line-height: 5rem;
+    }
+
+    .banner > section > div {
+        min-width: 92rem;
+        gap: 4.4rem;
+    }
+
+    .banner > section > div > span > input {
+        font-size: 3rem;
+    }
+
+}

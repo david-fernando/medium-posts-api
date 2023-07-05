@@ -20,7 +20,8 @@
     "nextjs-cors": "^2.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sanitize-html": "2.10.0"
+    "sanitize-html": "2.10.0",
+    "semver": "7.5.2"
   },
   "devDependencies": {
     "@types/jest": "29.5.2",

@@ -21,8 +21,8 @@
 
 - [How to use](#how_to_use)
 - [How to contribute](#how_to_contribute)
-- [Built Using](#did_you_like_it)
-- [Did you like it?](#authors)
+- [Can you help me?](#did_you_like_it)
+- [Author](#authors)
 
 
 ## 🏁 <span id="how_to_use">How to use </span>
@@ -112,8 +112,8 @@ To run the tests.
 yarn test
 ```
 
-## <span id="did_you_like_it">Did you like it?</span>
-If so, please consider financially supporting this API, using the GitHub sponsor.<br> If it is currently not possible to make a donation, no problem, you can also help me contributing with code, or just giving me a star. Every help is welcome.<br> Thank you very much in advance.
+## <span id="did_you_like_it">Can you help me?</span>
+If it's within your reach please consider making a donation through the [Open Collective platform](https://opencollective.com/medium-posts-api)!<br> But if it is currently not possible to make a donation, no problem, you can also help me contributing with code, or just giving me a star. Every help is welcome.<br> Thank you very much in advance.
 
 ## ✍️ <span id="authors">Author</span>
 

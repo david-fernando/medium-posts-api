@@ -24,7 +24,7 @@
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-typescript": "^7.23.2",
     "@types/jest": "^29.5.6",
-    "@types/node": "20.8.0",
+    "@types/node": "20.10.0",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
     "babel-jest": "^29.7.0",

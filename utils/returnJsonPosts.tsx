@@ -13,7 +13,7 @@ function returnJsonPosts(mediumPosts: any, mediumItems: Array<any>){
     title: mediumPosts.items[index].title,
     date: mediumPosts.items[index].pubDate.split(' ')[0],
     link: mediumPosts.items[index].link,
-    image: returnThumbnail(mediumPosts.items[index].thumbnail),
+    image: returnThumbnail(mediumItems[index].description),
     description: textCuted[index].replace(/\n/g, '. ').replace('. ', ''),
     tags: mediumPosts.items[index].categories
     })

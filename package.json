@@ -15,7 +15,7 @@
     "cheerio": "^1.0.0-rc.12",
     "json5": "2.2.3",
     "next": "13.4.17",
-    "nextjs-cors": "^2.1.2",
+    "nextjs-cors": "^2.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sanitize-html": "^2.11.0",

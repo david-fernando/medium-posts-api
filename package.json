@@ -10,7 +10,7 @@
     "test": "jest ./tests"
   },
   "dependencies": {
-    "@types/sanitize-html": "^2.9.5",
+    "@types/sanitize-html": "^2.11.0",
     "axios": "^1.6.7",
     "cheerio": "^1.0.0-rc.12",
     "json5": "2.2.3",

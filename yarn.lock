@@ -1941,7 +1941,7 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.5.tgz#1ef302e01cf7d2b5a0fa526790c9123bf1d06690"
   integrity sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==
 
-"@types/node@*", "@types/node@20.14.10", "@types/node@^20.10.6":
+"@types/node@*", "@types/node@20.14.10":
   version "20.14.10"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.14.10.tgz#a1a218290f1b6428682e3af044785e5874db469a"
   integrity sha512-MdiXf+nDuMvY0gJKxyfZ7/6UFsETO7mGKF54MVD/ekJS6HdFtpZFBgrh6Pseu64XTb2MLyFPlbW6hj8HYRQNOQ==
@@ -4652,13 +4652,13 @@ node-int64@^0.4.0:
   resolved "https://registry.yarnpkg.com/node-int64/-/node-int64-0.4.0.tgz#87a9065cdb355d3182d8f94ce11188b825c68a3b"
   integrity sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==
 
-node-mocks-http@^1.14.1:
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/node-mocks-http/-/node-mocks-http-1.14.1.tgz#6a387ce09229fe545dcc0154d16bc3480618e013"
-  integrity sha512-mfXuCGonz0A7uG1FEjnypjm34xegeN5+HI6xeGhYKecfgaZhjsmYoLE9LEFmT+53G1n8IuagPZmVnEL/xNsFaA==
+node-mocks-http@^1.15.1:
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/node-mocks-http/-/node-mocks-http-1.15.1.tgz#668591d5fd5af6d927e3c8bed0e2214a8d9f8d47"
+  integrity sha512-X/GpUpNNiPDYUeUD183W8V4OW6OHYWI29w/QDyb+c/GzOfVEAlo6HjbW9++eXT2aV2lGg+uS+XqTD2q0pNREQA==
   dependencies:
     "@types/express" "^4.17.21"
-    "@types/node" "^20.10.6"
+    "@types/node" "*"
     accepts "^1.3.7"
     content-disposition "^0.5.3"
     depd "^1.1.0"

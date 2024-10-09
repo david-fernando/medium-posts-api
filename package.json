@@ -12,7 +12,7 @@
   "dependencies": {
     "@types/sanitize-html": "^2.9.5",
     "axios": "^1.7.4",
-    "cheerio": "^1.0.0-rc.12",
+    "cheerio": "^1.0.0",
     "json5": "2.2.3",
     "next": "14.2.14",
     "nextjs-cors": "^2.2.0",

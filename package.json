@@ -10,7 +10,7 @@
     "test": "jest ./tests"
   },
   "dependencies": {
-    "@types/sanitize-html": "^2.9.5",
+    "@types/sanitize-html": "^2.13.0",
     "axios": "^1.7.4",
     "cheerio": "^1.0.0",
     "json5": "2.2.3",
@@ -18,7 +18,7 @@
     "nextjs-cors": "^2.2.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "sanitize-html": "^2.12.1",
+    "sanitize-html": "^2.13.1",
     "semver": "7.6.3"
   },
   "devDependencies": {

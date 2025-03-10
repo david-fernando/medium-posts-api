@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@types/sanitize-html": "^2.13.0",
-    "axios": "^1.7.4",
+    "axios": "^1.8.2",
     "cheerio": "^1.0.0",
     "json5": "2.2.3",
     "next": "14.2.14",

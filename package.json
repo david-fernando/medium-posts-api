@@ -37,6 +37,6 @@
     "eslint-config-next": "15.4.2",
     "jest": "^30.2.0",
     "node-mocks-http": "^1.17.2",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   }
 }

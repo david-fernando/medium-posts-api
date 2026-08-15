@@ -113,7 +113,19 @@ yarn test
 ```
 
 ## <span id="did_you_like_it">Can you help me?</span>
-If it's within your reach please consider making a donation through the [Open Collective platform](https://opencollective.com/medium-posts-api)!<br> But if it is currently not possible to make a donation, no problem, you can also help me contributing with code, or just giving me a star. Every help is welcome.<br> Thank you very much in advance.
+If you find this project useful, consider giving it a ⭐ on GitHub.
+It helps other developers discover the project.
+
+### 🚀 Need a reliable scraping API?
+
+If you're scraping websites that rely heavily on JavaScript or have
+anti-bot protection, check out **[ScrapingAnt](https://scrapingant.com/?ref=mdq5mzc)**.
+
+It handles browser rendering, proxies, and anti-bot infrastructure
+through a simple API.
+
+> Affiliate disclosure: I may earn a commission if you subscribe
+> through this link, at no additional cost to you.
 
 ## ✍️ <span id="authors">Author</span>
 
